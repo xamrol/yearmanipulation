@@ -24,22 +24,22 @@ public class YearManipulation {
 		Scanner sc = new Scanner(System.in);
 		
 		// Introduction
-		System.out.println("Bienvenue dans notre application de manipulation d'annÈes.");
-		System.out.println("FonctionnalitÈs disponibles:");
-		System.out.println("	1) VÈrification AnnÈe bissextile");
-		System.out.println("	2) Nombre d'annÈes ecoulÈes entre une annÈe et la date actuelle");
-		System.out.println("	3) VÈrification SiËcle AnnÈe");
+		System.out.println("Bienvenue dans notre application de manipulation d'ann√©es.");
+		System.out.println("Fonctionnalit√©s disponibles:");
+		System.out.println("	1) V√©rification Ann√©e bissextile");
+		System.out.println("	2) Nombre d'ann√©es ecoul√©es entre une ann√©e et la date actuelle");
+		System.out.println("	3) V√©rification Si√®cle Ann√©e");
 		
 		
 		// Getting the year
 		do {
-			System.out.print("Entrez l'annÈe de rÈfÈrence (>=0): ");
+			System.out.print("Entrez l'ann√©e de r√©f√©rence (>=0): ");
 			year = sc.nextInt();
 		} while (year<0);
 		
 		// Getting user choice
 		do {
-			System.out.print("Entrez le chiffre correspondant ‡ votre choix (>=0): ");
+			System.out.print("Entrez le chiffre correspondant √† votre choix (>=0): ");
 			userchoice = sc.nextInt();
 		}	while (userchoice<0);
 		
@@ -65,8 +65,21 @@ public class YearManipulation {
 	}
 	
 	public static void checkLeapYear(int year) {
-		// To do
 		
+		// Introduction
+		System.out.println("\nV√©rification Ann√©e bissextile ==>");
+		
+		// check whether year is divisible by 4 but not 100 or divisible by 400
+		if (year % 4 == 0 && year % 100 != 0){
+			System.out.println(year + " EST une ann√©e bissextile");
+		}
+		else if (year % 400 == 0){
+			System.out.println(year + " EST une ann√©e bissextile");
+		}
+		else {
+			System.out.println(year + " N'EST PAS une ann√©e bissextile");
+			isLeap = false;
+		}
 	}
 
 	public static void calculateNumberOfYears(int year) {

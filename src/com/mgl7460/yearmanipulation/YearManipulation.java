@@ -15,52 +15,64 @@ public class YearManipulation {
 	protected static boolean isLeap = true;
 	protected static int numberOfYears, convenientCentury;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 	
 		// Declarations
-		int userchoice, year;
+		int userchoice, year, retrygame;
 		
 		// Scanner Initialization
 		Scanner sc = new Scanner(System.in);
 		
-		// Introduction
-		System.out.println("Bienvenue dans notre application de manipulation d'années.");
-		System.out.println("Fonctionnalités disponibles:");
-		System.out.println("	1) Vérification Année bissextile");
-		System.out.println("	2) Nombre d'années ecoulées entre une année et la date actuelle");
-		System.out.println("	3) Vérification Siècle Année");
-		
-		
-		// Getting the year
 		do {
-			System.out.print("Entrez l'année de référence (>=0): ");
-			year = sc.nextInt();
-		} while (year<0);
 		
-		// Getting user choice
-		do {
-			System.out.print("Entrez le chiffre correspondant à votre choix (>=0): ");
-			userchoice = sc.nextInt();
-		}	while (userchoice<0);
+			// Introduction
+			System.out.println("Bienvenue dans notre application de manipulation d'ann�es.");
+			System.out.println("Fonctionnalités disponibles:");
+			System.out.println("	1) Vérification Année bissextile");
+			System.out.println("	2) Nombre d'années ecoulées entre une année et la date actuelle");
+			System.out.println("	3) Vérification Siécle Année");
+			
+			
+			// Getting the year
+			do {
+				System.out.print("Entrez l'année de référence (>=0): ");
+				year = sc.nextInt();
+			} while (year<0);
+			
+			// Getting user choice
+			do {
+				System.out.print("Entrez le chiffre correspondant à votre choix (>=0): ");
+				userchoice = sc.nextInt();
+			}	while (userchoice<0);
+			
+			
+			// Code behavior regarding user's choice
+			switch (userchoice) {
+				case 1:
+					checkLeapYear(year);
+				break;
+				case 2:
+					calculateNumberOfYears(year);
+				break;
+				case 3:
+					checkConvenientCentury(year);
+				break;
+				default:
+					System.out.println("Erreur! Valeur non reconnue!");
+			}
+			
+			// Ask user if he wants to play again
+			do {
+				System.out.println("\nVoulez-vous rejouer? (1=>Oui;2=>Non) :");
+				retrygame = sc.nextInt();
+			} while (retrygame != 1 && retrygame != 2);
+			
+		} while (retrygame == 1);
 		
 		// Closure of the Scanner's stream
 		sc.close();
 		
-		// Code behavior regarding user's choice
-		switch (userchoice) {
-			case 1:
-				checkLeapYear(year);
-			break;
-			case 2:
-				calculateNumberOfYears(year);
-			break;
-			case 3:
-				checkConvenientCentury(year);
-			break;
-			default:
-				System.out.println("Erreur! Valeur non reconnue!");
-		}
-		
+		System.out.println("\nAu revoir !");
 		
 	}
 	
@@ -129,4 +141,3 @@ public class YearManipulation {
 	}
 
 }
-	

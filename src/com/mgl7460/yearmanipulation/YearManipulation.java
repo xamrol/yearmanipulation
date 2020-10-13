@@ -83,7 +83,19 @@ public class YearManipulation {
 	}
 
 	public static void calculateNumberOfYears(int year) {
-		// To do
+			
+		// Introduction
+		System.out.println("\nCalcul nombre d'années entre Année courante et Année utilisateur ==>");
+		
+		// Current date checking
+		Calendar calendar =Calendar.getInstance();
+		int currentyear =calendar.get(Calendar.YEAR);
+		
+		numberOfYears = currentyear - year;
+		
+		// Output
+		System.out.println("Année courante(" + currentyear + ") - Année fournie(" + year + ") = " + numberOfYears);	
+
 
 	}
 	

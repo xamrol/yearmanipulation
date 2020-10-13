@@ -83,7 +83,7 @@ public class YearManipulation {
 	}
 
 	public static void calculateNumberOfYears(int year) {
-			
+		
 		// Introduction
 		System.out.println("\nCalcul nombre d'années entre Année courante et Année utilisateur ==>");
 		
@@ -96,12 +96,36 @@ public class YearManipulation {
 		// Output
 		System.out.println("Année courante(" + currentyear + ") - Année fournie(" + year + ") = " + numberOfYears);	
 
-
 	}
 	
 	public static void checkConvenientCentury(int year) {
-		// To do
-
+		
+		// Introduction
+		System.out.println("\nSiècle correspondant à l'année fournie ==>");
+		
+		// Declarations & Initializations
+		String stringy, substract = null;
+		int century;
+		
+		stringy = Integer.toString(year);		
+		
+		// Checking
+		if (year>=1000 & year<10000)
+			substract = stringy.substring(0, 2);
+		else if (year>=100)
+			substract = stringy.substring(0, 1);
+		else
+			substract = "0";
+		
+		// Century definition
+		convenientCentury = century = Integer.parseInt(substract) + 1;
+		
+		// Output
+		if(century == 1)
+			System.out.println("L'année " + year + " appartient au " + century + "er siècle");
+		else
+			System.out.println("L'année " + year + " appartient au " + century + "e siècle");
+		
 	}
 
 }

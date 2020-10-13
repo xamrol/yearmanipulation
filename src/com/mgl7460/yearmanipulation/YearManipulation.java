@@ -15,7 +15,7 @@ public class YearManipulation {
 	protected static boolean isLeap = true;
 	protected static int numberOfYears, convenientCentury;
 	
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 	
 		// Declarations
 		int userchoice, year, retrygame;
@@ -26,11 +26,11 @@ public class YearManipulation {
 		do {
 		
 			// Introduction
-			System.out.println("Bienvenue dans notre application de manipulation d'ann�es.");
+			System.out.println("Bienvenue dans notre application de manipulation d'années.");
 			System.out.println("Fonctionnalités disponibles:");
 			System.out.println("	1) Vérification Année bissextile");
 			System.out.println("	2) Nombre d'années ecoulées entre une année et la date actuelle");
-			System.out.println("	3) Vérification Siécle Année");
+			System.out.println("	3) Vérification Siècle Année");
 			
 			
 			// Getting the year
@@ -139,5 +139,22 @@ public class YearManipulation {
 			System.out.println("L'année " + year + " appartient au " + century + "e siècle");
 		
 	}
+	
+	// Useful methods for our unit tests
+	public boolean getThisYearLeapStatus(int year) {
+		checkLeapYear(year);
+		return isLeap;
+	}
+	
+	public int getNbYearsBetweenTwoValues(int year) {
+		calculateNumberOfYears(year);
+		return numberOfYears;
+	}
+	
+	public int getThisYearCentury(int year) {
+		checkConvenientCentury(year);
+		return convenientCentury;
+	}
 
 }
+	

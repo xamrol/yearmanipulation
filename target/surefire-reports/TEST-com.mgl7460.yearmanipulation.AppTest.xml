@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mgl7460.yearmanipulation.AppTest" time="0.266" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Toshiba C55\eclipse-workspace\yearmanipulation\year-manipulation-maven\target\test-classes;C:\Users\Toshiba C55\eclipse-workspace\yearmanipulation\year-manipulation-maven\target\classes;C:\Users\Toshiba C55\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Toshiba C55\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\TOSHIB~1\AppData\Local\Temp\surefire918007549487192428\surefirebooter18393360412798456107.jar C:\Users\Toshiba C55\AppData\Local\Temp\surefire918007549487192428 2020-10-14T02-31-21_521-jvmRun1 surefire128792369843795715tmp surefire_05488369486735087118tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Toshiba C55\eclipse-workspace\yearmanipulation\year-manipulation-maven\target\test-classes;C:\Users\Toshiba C55\eclipse-workspace\yearmanipulation\year-manipulation-maven\target\classes;C:\Users\Toshiba C55\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Toshiba C55\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Toshiba C55"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Toshiba C55\eclipse-workspace\yearmanipulation\year-manipulation-maven"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\TOSHIB~1\AppData\Local\Temp\surefire918007549487192428\surefirebooter18393360412798456107.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.8+10"/>
+    <property name="user.name" value="Xamrolfia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="localRepository" value="C:\Users\Toshiba C55\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\TOSHIB~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="user.dir" value="C:\Users\Toshiba C55\eclipse-workspace\yearmanipulation\year-manipulation-maven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\Python38\Scripts\;C:\Python38\;C:\Cygwin64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\laragon\bin\php\php-7.1.1-Win32-VC14-x86;C:\ProgramData\ComposerSetup\bin;C:\Programmes\nodejs;C:\WINDOWS\System32\OpenSSH\;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37\;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37\kivy_venv\Scripts;C:\Program Files\JetBrains\PyCharm Community Edition 2020.1\bin;C:\Users\Toshiba C55\AppData\Roaming\Python\Python37\Scripts;C:\sonar-scanner\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Geth;C:\Geth\geth.exe;C:\Program Files\dotnet\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\cmder\bin;C:\Users\Toshiba C55\.windows-build-tools\python27\;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37\kivy_venv\Scripts;C:\Users\Toshiba C55\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Toshiba C55\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Toshiba C55\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Toshiba C55\AppData\Roaming\Python\Python37\Scripts;C:\sonar-scanner\bin\;C:\Users\Toshiba C55\AppData\Roaming\npm;C:\Geth;C:\Geth\geth.exe;C:\Users\Toshiba C55\AppData\Local\GitHubDesktop\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\Program Files\apache-maven-3.6.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="11.0.8+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testGetNbYearsBetweenTwoValues" classname="com.mgl7460.yearmanipulation.AppTest" time="0.182"/>
+  <testcase name="testYearLength" classname="com.mgl7460.yearmanipulation.AppTest" time="0"/>
+  <testcase name="testThisYearLeapStatus" classname="com.mgl7460.yearmanipulation.AppTest" time="0.004"/>
+  <testcase name="testGetThisYearCentury" classname="com.mgl7460.yearmanipulation.AppTest" time="0.018"/>
+</testsuite>

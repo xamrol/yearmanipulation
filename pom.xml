@@ -139,7 +139,6 @@
           <version>2.22.1</version>
         </plugin>
     </plugins>
-
   </build>
   
   <reporting>

@@ -26,12 +26,12 @@ public class YearManipulation {
 		do {
 		
 			// Introduction
+
 			System.out.println("Bienvenue dans notre application de manipulation d'années.");
 			System.out.println("Fonctionnalités disponibles:");
 			System.out.println("	1) Vérification Année bissextile");
-			System.out.println("	2) Nombre d'années ecoulées entre une année et la date actuelle");
-			System.out.println("	3) Vérification Siècle Année");
-			
+			System.out.println("	2) Nombre d'années écoulées entre une année et la date actuelle");
+			System.out.println("	3) Vérification Siècle Année");		
 			
 			// Getting the year
 			do {
@@ -92,6 +92,7 @@ public class YearManipulation {
 			System.out.println(year + " N'EST PAS une année bissextile");
 			isLeap = false;
 		}
+		
 	}
 
 	public static void calculateNumberOfYears(int year) {
@@ -157,4 +158,4 @@ public class YearManipulation {
 	}
 
 }
-	
+

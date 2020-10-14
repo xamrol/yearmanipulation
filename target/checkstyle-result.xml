@@ -97,7 +97,7 @@
 <error line="134" column="45" severity="error" message="Inner assignments should be avoided." source="com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck"/>
 <error line="135" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 <error line="137" severity="error" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="137" column="17" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="137" column="17" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="138" severity="error" message="Line is longer than 80 characters (found 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="139" severity="error" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 <error line="140" severity="error" message="Line is longer than 80 characters (found 105)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>

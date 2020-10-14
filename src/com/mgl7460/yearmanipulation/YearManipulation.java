@@ -18,74 +18,87 @@ public class YearManipulation {
 	public static void main(String[] args) {
 	
 		// Declarations
-		int userchoice, year;
+		int userchoice, year, retrygame;
 		
 		// Scanner Initialization
 		Scanner sc = new Scanner(System.in);
 		
-		// Introduction
-		System.out.println("Bienvenue dans notre application de manipulation d'annÃ©es.");
-		System.out.println("FonctionnalitÃ©s disponibles:");
-		System.out.println("	1) VÃ©rification AnnÃ©e bissextile");
-		System.out.println("	2) Nombre d'annÃ©es ecoulÃ©es entre une annÃ©e et la date actuelle");
-		System.out.println("	3) VÃ©rification SiÃ¨cle AnnÃ©e");
-		
-		
-		// Getting the year
 		do {
-			System.out.print("Entrez l'annÃ©e de rÃ©fÃ©rence (>=0): ");
-			year = sc.nextInt();
-		} while (year<0);
 		
-		// Getting user choice
-		do {
-			System.out.print("Entrez le chiffre correspondant Ã  votre choix (>=0): ");
-			userchoice = sc.nextInt();
-		}	while (userchoice<0);
+			// Introduction
+			System.out.println("Bienvenue dans notre application de manipulation d'années.");
+			System.out.println("Fonctionnalités disponibles:");
+			System.out.println("	1) Vérification Année bissextile");
+			System.out.println("	2) Nombre d'années écoulées entre une année et la date actuelle");
+			System.out.println("	3) Vérification Siècle Année");
+			
+			
+			// Getting the year
+			do {
+				System.out.print("Entrez l'année de référence (>=0): ");
+				year = sc.nextInt();
+			} while (year<0);
+			
+			// Getting user choice
+			do {
+				System.out.print("Entrez le chiffre correspondant à votre choix (>=0): ");
+				userchoice = sc.nextInt();
+			}	while (userchoice<0);
+			
+			
+			// Code behavior regarding user's choice
+			switch (userchoice) {
+				case 1:
+					checkLeapYear(year);
+				break;
+				case 2:
+					calculateNumberOfYears(year);
+				break;
+				case 3:
+					checkConvenientCentury(year);
+				break;
+				default:
+					System.out.println("Erreur! Valeur non reconnue!");
+			}
+			
+			// Ask user if he wants to play again
+			do {
+				System.out.println("\nVoulez-vous rejouer? (1=>Oui;2=>Non) :");
+				retrygame = sc.nextInt();
+			} while (retrygame != 1 && retrygame != 2);
+			
+		} while (retrygame == 1);
 		
 		// Closure of the Scanner's stream
 		sc.close();
 		
-		// Code behavior regarding user's choice
-		switch (userchoice) {
-			case 1:
-				checkLeapYear(year);
-			break;
-			case 2:
-				calculateNumberOfYears(year);
-			break;
-			case 3:
-				checkConvenientCentury(year);
-			break;
-			default:
-				System.out.println("Erreur! Valeur non reconnue!");
-		}
-		
+		System.out.println("\nAu revoir !");
 		
 	}
 	
 	public static void checkLeapYear(int year) {
 		
 		// Introduction
-		System.out.println("\nVÃ©rification AnnÃ©e bissextile ==>");
+		System.out.println("\nVérification Année bissextile ==>");
 		
 		// check whether year is divisible by 4 but not 100 or divisible by 400
 		if (year % 4 == 0 && year % 100 != 0){
-			System.out.println(year + " EST une annÃ©e bissextile");
+			System.out.println(year + " EST une année bissextile");
 		}
 		else if (year % 400 == 0){
-			System.out.println(year + " EST une annÃ©e bissextile");
+			System.out.println(year + " EST une année bissextile");
 		}
 		else {
-			System.out.println(year + " N'EST PAS une annÃ©e bissextile");
+			System.out.println(year + " N'EST PAS une année bissextile");
 			isLeap = false;
 		}
+		
 	}
 
 	public static void calculateNumberOfYears(int year) {
 		
 		// Introduction
-		System.out.println("\nCalcul nombre d'annÃ©es entre AnnÃ©e courante et AnnÃ©e utilisateur ==>");
+		System.out.println("\nCalcul nombre d'années entre Année courante et Année utilisateur ==>");
 		
 		// Current date checking
 		Calendar calendar =Calendar.getInstance();
@@ -94,14 +107,14 @@ public class YearManipulation {
 		numberOfYears = currentyear - year;
 		
 		// Output
-		System.out.println("AnnÃ©e courante(" + currentyear + ") - AnnÃ©e fournie(" + year + ") = " + numberOfYears);	
+		System.out.println("Année courante(" + currentyear + ") - Année fournie(" + year + ") = " + numberOfYears);	
 
 	}
 	
 	public static void checkConvenientCentury(int year) {
 		
 		// Introduction
-		System.out.println("\nSiÃ¨cle correspondant Ã  l'annÃ©e fournie ==>");
+		System.out.println("\nSiècle correspondant à l'année fournie ==>");
 		
 		// Declarations & Initializations
 		String stringy, substract = null;
@@ -122,11 +135,27 @@ public class YearManipulation {
 		
 		// Output
 		if(century == 1)
-			System.out.println("L'annÃ©e " + year + " appartient au " + century + "er siÃ¨cle");
+			System.out.println("L'année " + year + " appartient au " + century + "er siècle");
 		else
-			System.out.println("L'annÃ©e " + year + " appartient au " + century + "e siÃ¨cle");
+			System.out.println("L'année " + year + " appartient au " + century + "e siècle");
 		
 	}
-
-}
 	
+	// Useful methods for our unit tests
+	public boolean getThisYearLeapStatus(int year) {
+		checkLeapYear(year);
+		return isLeap;
+	}
+	
+	public int getNbYearsBetweenTwoValues(int year) {
+		calculateNumberOfYears(year);
+		return numberOfYears;
+	}
+	
+	public int getThisYearCentury(int year) {
+		checkConvenientCentury(year);
+		return convenientCentury;
+	}
+	
+}
+

@@ -166,21 +166,6 @@
               </reports>
             </reportSet>
            </reportSets>
-           <!--    
-       	   <configuration>
-       		   <linkXref>true</linkXref>
-          	   <sourceEncoding>utf-8</sourceEncoding>
-               <minimumTokens>100</minimumTokens>
-               <targetJdk>1.5</targetJdk>
-          	   <excludes>
-            		<exclude>**/*Bean.java</exclude>
-            		<exclude>**/generated/*.java</exclude>
-          	   </excludes>
-               <excludeRoots>
-            		<excludeRoot>target/generated-sources/stubs</excludeRoot>
-          	   </excludeRoots>
-           </configuration>
-           -->
         </plugin>
         <plugin>
            <groupId>com.github.spotbugs</groupId>
